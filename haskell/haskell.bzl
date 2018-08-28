@@ -27,6 +27,7 @@ load(
 load(
     ":lint.bzl",
     _haskell_lint = "haskell_lint",
+    _haskell_lint_aspect = "haskell_lint_aspect",
 )
 load(
     ":toolchain.bzl",
@@ -264,6 +265,8 @@ haskell_import = rule(
 haskell_doc = _haskell_doc
 
 haskell_lint = _haskell_lint
+
+haskell_lint_aspect = _haskell_lint_aspect
 
 haskell_doctest = _haskell_doctest
 
